@@ -40,7 +40,7 @@ if (projects.length === 0) {
 const seen = new Set();
 projects.forEach(function (p, i) {
   const label = '项目[' + i + '] ' + (p.id || '(无 id)');
-  ['id', 'title', 'tagline', 'role', 'period', 'cover', 'prdPdf'].forEach(function (k) {
+  ['id', 'title', 'tagline', 'role', 'period', 'cover'].forEach(function (k) {
     if (p[k] === undefined || p[k] === '') problems.push(label + '：缺少字段 ' + k);
   });
   if (!Array.isArray(p.images) || p.images.length === 0) {
@@ -49,8 +49,12 @@ projects.forEach(function (p, i) {
   if (p.id && seen.has(p.id)) problems.push('项目 id 重复：' + p.id);
   seen.add(p.id);
   checkFile(p.cover);
-  checkFile(p.prdPdf);
-  (p.images || []).forEach(checkFile);
+  if (p.prdPdf) checkFile(p.prdPdf);
+  (p.images || []).forEach(function (im) {
+    if (typeof im === 'string') checkFile(im);
+    else if (im && im.src) checkFile(im.src);
+    else problems.push(label + '：images 中存在无效项');
+  });
 });
 
 if (problems.length > 0) {

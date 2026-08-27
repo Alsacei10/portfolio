@@ -64,7 +64,7 @@
     }).join('');
   }
 
-  function fillDocs(project) {
+    function fillDocs(project) {
     var actions = $('p-doc-actions');
     var note = $('p-doc-note');
     var html = '';
@@ -72,29 +72,37 @@
     if (project.prdPdf) {
       html += '<a class="btn btn-primary" href="' + escapeHtml(project.prdPdf) + '" target="_blank" rel="noopener">查看 PRD</a>';
       html += '<a class="btn btn-secondary" href="' + escapeHtml(project.prdPdf) + '" download="' + escapeHtml((project.title || '项目') + '-PRD.pdf') + '">下载 PRD</a>';
-      if (note) note.textContent = '提示：若 PDF 无法在浏览器内直接预览，请使用「下载 PRD」按钮。';
+      if (note) {
+        note.textContent = '提示：若 PDF 无法在浏览器内直接预览，请使用「下载 PRD」按钮。';
+        note.style.display = '';
+      }
+    } else if (note) {
+      note.style.display = 'none';
     }
     var proto = project.links && project.links.prototype;
     if (proto) {
       html += '<a class="btn btn-secondary" href="' + escapeHtml(proto) + '" target="_blank" rel="noopener">在线原型</a>';
     }
     actions.innerHTML = html;
+    if (actions) actions.style.display = html ? '' : 'none';
   }
 
-  function fillGallery(project) {
+    function fillGallery(project) {
     var gallery = $('p-gallery');
     var images = project.images || [];
     if (!images.length) {
       gallery.innerHTML = '<p class="section-sub">暂无原型图。</p>';
       return;
     }
-    gallery.innerHTML = images.map(function (src, i) {
-      var alt = (project.title || '项目') + ' 界面示意 ' + (i + 1);
+    gallery.innerHTML = images.map(function (item, i) {
+      var src = typeof item === 'string' ? item : (item && item.src);
+      var caption = typeof item === 'string' ? '界面示意 ' + (i + 1) : ((item && item.caption) || '界面示意 ' + (i + 1));
+      var alt = (project.title || '项目') + ' · ' + caption;
       return (
         '<figure>' +
           '<img src="' + escapeHtml(src) + '" alt="' + escapeHtml(alt) + '" loading="lazy" ' +
-          'data-lightbox data-caption="' + escapeHtml(alt) + '">' +
-          '<figcaption>界面示意 ' + (i + 1) + '</figcaption>' +
+          'data-lightbox data-caption="' + escapeHtml(caption) + '">' +
+          '<figcaption>' + escapeHtml(caption) + '</figcaption>' +
         '</figure>'
       );
     }).join('');

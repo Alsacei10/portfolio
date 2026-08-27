@@ -87,8 +87,8 @@ npx serve .
 | `period` | 项目周期 |
 | `tags` | 标签数组（如 `["AI", "Web"]`） |
 | `cover` | 封面图路径 |
-| `images` | 界面截图路径数组（详情页图集，点击可放大） |
-| `prdPdf` | PRD PDF 路径 |
+| `images` | 界面截图数组，可用字符串路径，或 `{"src": "路径", "caption": "说明文字"}`（带说明更利于面试官理解） |
+| `prdPdf` | PRD PDF 路径（可选，不填则详情页不显示查看/下载按钮） |
 | `summary` | 项目概述（数组，每项一段） |
 | `links.prototype` | （可选）在线原型链接，留空字符串则不显示 |
 

@@ -25,55 +25,102 @@
   },
   "projects": [
     {
-      "id": "ai-interview-assistant",
-      "title": "AI 面试刷题助手",
-      "tagline": "用 AI 生成面试题并模拟真实面试，帮助求职者高效备考。",
-      "role": "产品负责人",
-      "period": "2025.06 - 2025.09",
-      "tags": [
-        "AI",
-        "Web",
-        "从 0 到 1"
-      ],
-      "cover": "projects/ai-interview-assistant/cover.png",
-      "images": [
-        "projects/ai-interview-assistant/01-home.png",
-        "projects/ai-interview-assistant/02-chat.png",
-        "projects/ai-interview-assistant/03-dashboard.png"
-      ],
-      "prdPdf": "projects/ai-interview-assistant/PRD.pdf",
-      "summary": [
-        "背景：求职者在面试准备阶段普遍缺少针对性练习，难以获得真实面试反馈。",
-        "方案：打造一款 AI 驱动的面试刷题工具，支持按岗位生成面试题、AI 模拟面试问答、以及基于答题表现的能力复盘。",
-        "我的工作：负责需求调研、功能规划、信息架构与关键页面原型设计，并输出完整 PRD 推动研发落地。",
-        "结果：项目从 0 到 1 完成立项与首版迭代，验证了核心用户路径（占位示例文案，请替换为真实内容）。"
-      ],
-      "links": {
-        "prototype": ""
-      }
-    },
-    {
-      "id": "fitness-app",
-      "title": "轻运动打卡 App",
-      "tagline": "用游戏化激励帮助用户养成每日运动习惯。",
+      "id": "store-management-system",
+      "title": "连锁奶茶门店运营管理系统",
+      "tagline": "面向 60+ 海外连锁门店的一体化运营管理平台，覆盖加盟、稽核、订货、监控与客流等核心业务。",
       "role": "产品经理",
-      "period": "2025.02 - 2025.05",
+      "period": "2026.01 - 至今",
       "tags": [
-        "移动端",
-        "游戏化",
-        "增长"
+        "B 端",
+        "门店运营",
+        "连锁零售",
+        "ERP"
       ],
-      "cover": "projects/fitness-app/cover.png",
+      "cover": "projects/store-management-system/franchise-overview.png",
       "images": [
-        "projects/fitness-app/01-home.png",
-        "projects/fitness-app/02-record.png",
-        "projects/fitness-app/03-achievements.png"
+        {
+          "src": "projects/store-management-system/order-recommend.png",
+          "caption": "订货推荐 · 智能订货建议"
+        },
+        {
+          "src": "projects/store-management-system/order-review.png",
+          "caption": "订单评价 · 门店订单与评价"
+        },
+        {
+          "src": "projects/store-management-system/store-monitor.png",
+          "caption": "门店监控 · 实时视频监控"
+        },
+        {
+          "src": "projects/store-management-system/store-monitor-2.png",
+          "caption": "门店监控 · 多机位切换与回放"
+        },
+        {
+          "src": "projects/store-management-system/store-traffic.png",
+          "caption": "门店客流统计 · 客流趋势分析"
+        },
+        {
+          "src": "projects/store-management-system/franchise-overview.png",
+          "caption": "加盟管理 · 加盟总览"
+        },
+        {
+          "src": "projects/store-management-system/franchise-apply-form.png",
+          "caption": "加盟申请 · 填写申请信息"
+        },
+        {
+          "src": "projects/store-management-system/franchise-apply-status.png",
+          "caption": "加盟申请 · 申请状态跟踪"
+        },
+        {
+          "src": "projects/store-management-system/address-review-status.png",
+          "caption": "地址审核 · 审核状态列表"
+        },
+        {
+          "src": "projects/store-management-system/address-review-detail.png",
+          "caption": "地址审核 · 审核详情"
+        },
+        {
+          "src": "projects/store-management-system/review-detail.png",
+          "caption": "审核详情 · 查看审核明细"
+        },
+        {
+          "src": "projects/store-management-system/warning-letter.png",
+          "caption": "警告信 · 违规警告管理"
+        },
+        {
+          "src": "projects/store-management-system/audit-issue-management.png",
+          "caption": "稽核管理 · 问题列表"
+        },
+        {
+          "src": "projects/store-management-system/audit-issue-management-2.png",
+          "caption": "稽核管理 · 问题处理"
+        },
+        {
+          "src": "projects/store-management-system/audit-draft-delete.png",
+          "caption": "稽核 · 草稿删除"
+        },
+        {
+          "src": "projects/store-management-system/audit-create-view.png",
+          "caption": "稽核 · 新建与查看"
+        },
+        {
+          "src": "projects/store-management-system/store-audit-issues.png",
+          "caption": "门店稽核 · 问题汇总"
+        },
+        {
+          "src": "projects/store-management-system/app-audit.png",
+          "caption": "APP 稽核 · 移动端稽核"
+        },
+        {
+          "src": "projects/store-management-system/app-audit-2.png",
+          "caption": "APP 稽核 · 问题处理"
+        }
       ],
-      "prdPdf": "projects/fitness-app/PRD.pdf",
+      "prdPdf": "",
       "summary": [
-        "背景：运动类 App 普遍面临次日留存低、用户难以坚持的问题。",
-        "方案：通过每日打卡、连续签到与勋章体系等游戏化机制提升用户粘性，并辅以轻量的数据记录与可视化。",
-        "我的工作：负责竞品分析、用户调研、原型设计与迭代优化，输出 PRD 并跟进上线后的数据表现（占位示例文案，请替换为真实内容）。"
+        "背景：为泰国区域 60+ 连锁奶茶门店提供日常业务系统支持，并深度参与门店运营管理系统的功能迭代需求落地与全流程跟进。",
+        "方案：系统覆盖门店运营（订货推荐、订单评价、视频监控、客流统计）、加盟管理（申请、地址审核、警告信）与稽核管理（问题管理、移动端 APP 稽核）等核心模块，支撑海外门店日常运营与统一管控。",
+        "我的工作：负责需求梳理、业务逻辑核对、原型设计与功能落地跟进，输出需求文档并协调业务与研发两端，保障系统稳定运行并持续迭代。",
+        "结果：保障 60+ 海外门店系统稳定运行，提升门店安防监管与运营管控效率，覆盖实时监控、多机位切换、历史回放等核心能力（依据简历整理）。"
       ],
       "links": {
         "prototype": ""
