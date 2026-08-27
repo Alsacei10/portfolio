@@ -1,0 +1,80 @@
+{
+  "profile": {
+    "name": "你的姓名",
+    "role": "产品经理",
+    "tagline": "关注 AI 与效率工具的产品经理，擅长把复杂需求拆解为清晰的产品方案，用原型与 PRD 推动落地。",
+    "avatar": "assets/img/avatar.png",
+    "email": "your@email.com",
+    "wechat": "your-wechat-id",
+    "resumePdf": "assets/resume.pdf",
+    "bio": [
+      "你好，我是你的姓名，一名产品经理，拥有从需求调研、产品规划到原型设计与 PRD 撰写的完整项目经验。",
+      "本作品集收录了我的产品设计原型图与产品需求文档（PRD），欢迎点击查看；如需更详细的项目细节或完整简历，欢迎通过下方联系方式与我交流。"
+    ],
+    "skills": [
+      "需求分析",
+      "原型设计",
+      "PRD 撰写",
+      "数据分析",
+      "项目管理",
+      "AI 产品"
+    ]
+  },
+  "projects": [
+    {
+      "id": "ai-interview-assistant",
+      "title": "AI 面试刷题助手",
+      "tagline": "用 AI 生成面试题并模拟真实面试，帮助求职者高效备考。",
+      "role": "产品负责人",
+      "period": "2025.06 - 2025.09",
+      "tags": [
+        "AI",
+        "Web",
+        "从 0 到 1"
+      ],
+      "cover": "projects/ai-interview-assistant/cover.png",
+      "images": [
+        "projects/ai-interview-assistant/01-home.png",
+        "projects/ai-interview-assistant/02-chat.png",
+        "projects/ai-interview-assistant/03-dashboard.png"
+      ],
+      "prdPdf": "projects/ai-interview-assistant/PRD.pdf",
+      "summary": [
+        "背景：求职者在面试准备阶段普遍缺少针对性练习，难以获得真实面试反馈。",
+        "方案：打造一款 AI 驱动的面试刷题工具，支持按岗位生成面试题、AI 模拟面试问答、以及基于答题表现的能力复盘。",
+        "我的工作：负责需求调研、功能规划、信息架构与关键页面原型设计，并输出完整 PRD 推动研发落地。",
+        "结果：项目从 0 到 1 完成立项与首版迭代，验证了核心用户路径（占位示例文案，请替换为真实内容）。"
+      ],
+      "links": {
+        "prototype": ""
+      }
+    },
+    {
+      "id": "fitness-app",
+      "title": "轻运动打卡 App",
+      "tagline": "用游戏化激励帮助用户养成每日运动习惯。",
+      "role": "产品经理",
+      "period": "2025.02 - 2025.05",
+      "tags": [
+        "移动端",
+        "游戏化",
+        "增长"
+      ],
+      "cover": "projects/fitness-app/cover.png",
+      "images": [
+        "projects/fitness-app/01-home.png",
+        "projects/fitness-app/02-record.png",
+        "projects/fitness-app/03-achievements.png"
+      ],
+      "prdPdf": "projects/fitness-app/PRD.pdf",
+      "summary": [
+        "背景：运动类 App 普遍面临次日留存低、用户难以坚持的问题。",
+        "方案：通过每日打卡、连续签到与勋章体系等游戏化机制提升用户粘性，并辅以轻量的数据记录与可视化。",
+        "我的工作：负责竞品分析、用户调研、原型设计与迭代优化，输出 PRD 并跟进上线后的数据表现（占位示例文案，请替换为真实内容）。"
+      ],
+      "links": {
+        "prototype": ""
+      }
+    }
+  ]
+}

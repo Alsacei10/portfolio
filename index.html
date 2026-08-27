@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>你的姓名 · 产品经理作品集</title>
+  <meta name="description" content="产品经理个人作品集：展示产品设计原型图与产品需求文档（PRD），欢迎点击查看。">
+  <meta name="author" content="你的姓名">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="你的姓名 · 产品经理作品集">
+  <meta property="og:description" content="展示产品设计原型图与产品需求文档（PRD）的个人作品集。">
+  <meta property="og:image" content="assets/img/og-cover.png">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="主导航">
+      <a class="nav-brand" href="index.html">
+        <span class="brand-mark">作</span>
+        <span id="nav-name">你的姓名</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">作品</a></li>
+        <li><a href="index.html#about">关于我</a></li>
+        <li><a href="index.html#contact">联系</a></li>
+      </ul>
+      <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank" rel="noopener" id="nav-resume">下载简历</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="avatar" id="avatar" src="assets/img/avatar.png" alt="头像" width="116" height="116">
+      <h1 class="hero-name" id="hero-name">你的姓名</h1>
+      <p class="hero-role" id="hero-role">产品经理</p>
+      <p class="hero-tagline" id="hero-tagline">关注 AI 与效率工具的产品经理，擅长把复杂需求拆解为清晰的产品方案，用原型与 PRD 推动落地。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">查看作品</a>
+        <a class="btn btn-secondary" href="assets/resume.pdf" target="_blank" rel="noopener" id="hero-resume">下载简历</a>
+      </div>
+      <div class="error-banner" id="data-error" role="alert">
+        数据加载失败：请通过本地服务器访问（如 python -m http.server 8000）或部署后再打开本页。
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="section-title">作品展示</h2>
+      <p class="section-sub">以下为我的代表项目，点击卡片查看原型图与产品需求文档（PRD）。</p>
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+
+    <section class="section section-alt" id="about">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-grid">
+        <div class="about-bio" id="about-bio"></div>
+        <div>
+          <div class="about-skills-label" id="skills-label">技能与工具</div>
+          <div class="skill-list" id="skill-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 class="section-title">联系我</h2>
+      <div class="contact">
+        <div class="contact-card">
+          <div class="contact-line"><span class="label">邮箱</span><a class="contact-email" id="contact-email" href="mailto:your@email.com">your@email.com</a></div>
+          <div class="contact-line"><span class="label">微信</span><span id="contact-wechat">your-wechat-id</span></div>
+          <p class="contact-hint">欢迎对作品或合作机会进行交流，收到消息后会尽快回复。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="footer-year">2026</span> <span id="footer-name">你的姓名</span> · 个人作品集网站</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
