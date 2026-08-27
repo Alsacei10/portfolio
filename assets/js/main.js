@@ -72,6 +72,8 @@
       email.href = 'mailto:' + profile.email;
     }
     fill('contact-wechat', profile.wechat);
+    var wechatLine = $('contact-wechat-line');
+    if (wechatLine) wechatLine.style.display = profile.wechat ? '' : 'none';
   }
 
   function renderProjects(projects) {

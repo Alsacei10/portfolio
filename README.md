@@ -6,6 +6,8 @@
 - 语言：中文
 - 结构：首页（个人介绍 + 项目卡片）→ 项目详情页（图集 + PRD 查看/下载）
 
+> 当前站点已填入真实简历信息：姓名「戴章勇」、邮箱 809968881@qq.com、证件照头像、真实简历 PDF（`assets/resume.pdf`）。微信号待补充，补充后在 `data/projects.json` 的 `profile.wechat` 填入即可。
+
 ## 目录结构
 
 ```
@@ -30,8 +32,8 @@
 │  └─ fitness-app/               # 示例项目二：素材 + PRD
 ├─ scripts/
 │  ├─ check-content.js           # 内容校验脚本
-│  ├─ generate-placeholders.py   # （可选）重新生成占位图
-│  └─ generate-placeholder-pdfs.py # （可选）重新生成占位 PDF
+│  ├─ generate-placeholders.py   # （可选）重新生成占位图（谨慎：会覆盖真实头像）
+│  └─ generate-placeholder-pdfs.py # （可选）重新生成占位 PDF（谨慎：会覆盖真实简历）
 └─ README.md
 ```
 

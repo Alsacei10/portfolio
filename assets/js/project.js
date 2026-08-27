@@ -30,7 +30,7 @@
   }
 
   function render(project, index, projects) {
-    document.title = (project.title || '项目详情') + ' · 你的姓名作品集';
+    document.title = (project.title || '项目详情') + ' · 戴章勇作品集';
 
     fillMeta(project);
     fillSummary(project);
