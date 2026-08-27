@@ -36,82 +36,82 @@
         "连锁零售",
         "ERP"
       ],
-      "cover": "projects/store-management-system/franchise-overview.png",
+      "cover": "projects/store-management-system/franchise-overview.webp",
       "images": [
         {
-          "src": "projects/store-management-system/order-recommend.png",
+          "src": "projects/store-management-system/order-recommend.webp",
           "caption": "订货推荐 · 智能订货建议"
         },
         {
-          "src": "projects/store-management-system/order-review.png",
+          "src": "projects/store-management-system/order-review.webp",
           "caption": "订单评价 · 门店订单与评价"
         },
         {
-          "src": "projects/store-management-system/store-monitor.png",
+          "src": "projects/store-management-system/store-monitor.webp",
           "caption": "门店监控 · 实时视频监控"
         },
         {
-          "src": "projects/store-management-system/store-monitor-2.png",
+          "src": "projects/store-management-system/store-monitor-2.webp",
           "caption": "门店监控 · 多机位切换与回放"
         },
         {
-          "src": "projects/store-management-system/store-traffic.png",
+          "src": "projects/store-management-system/store-traffic.webp",
           "caption": "门店客流统计 · 客流趋势分析"
         },
         {
-          "src": "projects/store-management-system/franchise-overview.png",
+          "src": "projects/store-management-system/franchise-overview.webp",
           "caption": "加盟管理 · 加盟总览"
         },
         {
-          "src": "projects/store-management-system/franchise-apply-form.png",
+          "src": "projects/store-management-system/franchise-apply-form.webp",
           "caption": "加盟申请 · 填写申请信息"
         },
         {
-          "src": "projects/store-management-system/franchise-apply-status.png",
+          "src": "projects/store-management-system/franchise-apply-status.webp",
           "caption": "加盟申请 · 申请状态跟踪"
         },
         {
-          "src": "projects/store-management-system/address-review-status.png",
+          "src": "projects/store-management-system/address-review-status.webp",
           "caption": "地址审核 · 审核状态列表"
         },
         {
-          "src": "projects/store-management-system/address-review-detail.png",
+          "src": "projects/store-management-system/address-review-detail.webp",
           "caption": "地址审核 · 审核详情"
         },
         {
-          "src": "projects/store-management-system/review-detail.png",
+          "src": "projects/store-management-system/review-detail.webp",
           "caption": "审核详情 · 查看审核明细"
         },
         {
-          "src": "projects/store-management-system/warning-letter.png",
+          "src": "projects/store-management-system/warning-letter.webp",
           "caption": "警告信 · 违规警告管理"
         },
         {
-          "src": "projects/store-management-system/audit-issue-management.png",
+          "src": "projects/store-management-system/audit-issue-management.webp",
           "caption": "稽核管理 · 问题列表"
         },
         {
-          "src": "projects/store-management-system/audit-issue-management-2.png",
+          "src": "projects/store-management-system/audit-issue-management-2.webp",
           "caption": "稽核管理 · 问题处理"
         },
         {
-          "src": "projects/store-management-system/audit-draft-delete.png",
+          "src": "projects/store-management-system/audit-draft-delete.webp",
           "caption": "稽核 · 草稿删除"
         },
         {
-          "src": "projects/store-management-system/audit-create-view.png",
+          "src": "projects/store-management-system/audit-create-view.webp",
           "caption": "稽核 · 新建与查看"
         },
         {
-          "src": "projects/store-management-system/store-audit-issues.png",
+          "src": "projects/store-management-system/store-audit-issues.webp",
           "caption": "门店稽核 · 问题汇总"
         },
         {
-          "src": "projects/store-management-system/app-audit.png",
+          "src": "projects/store-management-system/app-audit.webp",
           "caption": "APP 稽核 · 移动端稽核"
         },
         {
-          "src": "projects/store-management-system/app-audit-2.png",
+          "src": "projects/store-management-system/app-audit-2.webp",
           "caption": "APP 稽核 · 问题处理"
         }
       ],

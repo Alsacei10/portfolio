@@ -72,10 +72,11 @@ npx serve .
 ### 2. 新增/替换项目
 
 1. 在 `projects/` 下新建文件夹，建议用英文/拼音命名（如 `projects/ai-interview-assistant/`）。
-2. 放入素材：
-   - `cover.png`：项目封面，推荐 **16:10**（如 1200×750），PNG/JPG 均可；
-   - 若干界面截图：如 `01-home.png`、`02-chat.png`，宽度建议 ≤1600px；
+2. 放入素材（PNG/JPG 均可）：
+   - `cover.*`：项目封面，推荐 **16:10**（如 1200×750）；
+   - 若干界面截图：如 `01-home.*`、`02-chat.*`；
    - `PRD.pdf`：产品需求文档 PDF。
+   - 然后用 `python scripts/import-desktop-assets.py` 导入，`python scripts/optimize-images.py` 统一压缩为 WebP。
 3. 在 `data/projects.json` 的 `projects` 数组中新增一条记录。
 
 | 字段 | 说明 |
@@ -102,7 +103,7 @@ node scripts/check-content.js
 
 ## 素材建议
 
-- 图片格式：PNG / JPG；文件名用英文/拼音，避免中文/空格导致编码问题
+- 图片格式：你提供 PNG / JPG 即可；站点内会自动转换为 WebP（宽度 ≤1280），总大小约 1MB，国内访问更快
 - 原型截图宽度 ≤1600px（2 倍屏下约 800dp），控制文件大小
 - 封面建议 16:10；详情图建议宽度一致，观感更整齐
 - PRD 导出为 PDF（不要用 Word 直接放，浏览器预览体验差）
