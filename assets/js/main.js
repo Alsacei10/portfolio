@@ -74,6 +74,13 @@
     fill('contact-wechat', profile.wechat);
     var wechatLine = $('contact-wechat-line');
     if (wechatLine) wechatLine.style.display = profile.wechat ? '' : 'none';
+    var phone = $('contact-phone');
+    if (phone && profile.phone) {
+      phone.textContent = profile.phone;
+      phone.href = 'tel:' + profile.phone;
+    }
+    var phoneLine = $('contact-phone-line');
+    if (phoneLine) phoneLine.style.display = profile.phone ? '' : 'none';
   }
 
   function renderProjects(projects) {
