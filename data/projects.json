@@ -27,17 +27,26 @@
     {
       "id": "store-management-system",
       "title": "连锁奶茶门店运营管理系统",
-      "tagline": "面向 60+ 海外连锁门店的一体化运营管理平台，覆盖加盟、稽核、订货、监控与客流等核心业务。",
+      "tagline": "面向 60+ 海外连锁门店的一体化运营管理平台，覆盖加盟、稽核、订货、监控与客流等核心业务，视频监控模块已上线运行。",
       "role": "产品经理",
       "period": "2026.01 - 至今",
       "tags": [
         "B 端",
         "门店运营",
         "连锁零售",
-        "ERP"
+        "ERP",
+        "已上线"
       ],
       "cover": "projects/store-management-system/franchise-overview.webp",
       "images": [
+        {
+          "src": "projects/store-management-system/store-monitor.webp",
+          "caption": "门店监控 · 实时视频监控（已上线模块）"
+        },
+        {
+          "src": "projects/store-management-system/store-monitor-2.webp",
+          "caption": "门店监控 · 多机位切换与回放（已上线模块）"
+        },
         {
           "src": "projects/store-management-system/order-recommend.webp",
           "caption": "订货推荐 · 智能订货建议"
@@ -45,14 +54,6 @@
         {
           "src": "projects/store-management-system/order-review.webp",
           "caption": "订单评价 · 门店订单与评价"
-        },
-        {
-          "src": "projects/store-management-system/store-monitor.webp",
-          "caption": "门店监控 · 实时视频监控"
-        },
-        {
-          "src": "projects/store-management-system/store-monitor-2.webp",
-          "caption": "门店监控 · 多机位切换与回放"
         },
         {
           "src": "projects/store-management-system/store-traffic.webp",
@@ -115,12 +116,57 @@
           "caption": "APP 稽核 · 问题处理"
         }
       ],
-      "prdPdf": "",
+      "prdPdf": "projects/store-management-system/PRD.pdf",
       "summary": [
         "背景：为泰国区域 60+ 连锁奶茶门店提供日常业务系统支持，并深度参与门店运营管理系统的功能迭代需求落地与全流程跟进。",
         "方案：系统覆盖门店运营（订货推荐、订单评价、视频监控、客流统计）、加盟管理（申请、地址审核、警告信）与稽核管理（问题管理、移动端 APP 稽核）等核心模块，支撑海外门店日常运营与统一管控。",
-        "我的工作：负责需求梳理、业务逻辑核对、原型设计与功能落地跟进，输出需求文档并协调业务与研发两端，保障系统稳定运行并持续迭代。",
-        "结果：保障 60+ 海外门店系统稳定运行，提升门店安防监管与运营管控效率，覆盖实时监控、多机位切换、历史回放等核心能力（依据简历整理）。"
+        "我的工作：负责需求梳理、业务逻辑核对、原型设计与功能落地跟进，输出需求文档并协调业务与研发两端，保障系统稳定运行并持续迭代。其中视频监控模块（多机位切换、历史回放、画面抓拍）的需求方案被团队采纳，已上线稳定运行。",
+        "结果：系统保障 60+ 海外门店日常运营与统一管控；视频监控模块已上线，覆盖实时监控、多机位切换、历史回放等核心能力，提升了门店安防监管效率。"
+      ],
+      "links": {
+        "prototype": ""
+      }
+    },
+    {
+      "id": "order-verification",
+      "title": "订单需求设计",
+      "tagline": "从 0 到 1 独立完成订单模块的完整需求设计：业务背景、流程梳理、多场景交互规则与字段定义。",
+      "role": "产品需求设计（独立输出）",
+      "period": "2026.02 - 2026.03",
+      "tags": [
+        "B 端",
+        "从0到1",
+        "订单流转",
+        "完整PRD"
+      ],
+      "cover": "projects/order-verification/cover.png",
+      "images": [
+        {
+          "src": "projects/order-verification/cover.png",
+          "caption": "需求背景 · 订单流转与评价体系"
+        },
+        {
+          "src": "projects/order-verification/01-flow.png",
+          "caption": "发布评价 · 评分规则与填写项"
+        },
+        {
+          "src": "projects/order-verification/02-order-submit.png",
+          "caption": "订单详情 · 我的评价展示"
+        },
+        {
+          "src": "projects/order-verification/03-order-detail.png",
+          "caption": "配送方式 · 选择与订单备注"
+        },
+        {
+          "src": "projects/order-verification/04-verify.png",
+          "caption": "订单列表 · 新增字段与附件预览"
+        }
+      ],
+      "prdPdf": "projects/order-verification/PRD.pdf",
+      "summary": [
+        "背景：加盟商与门店之间的订单流转流程需要规范化，包括下单、配送选择、评价反馈等环节，旧系统无法满足业务精细化运营需要。",
+        "我的工作：独立完成该模块的完整需求设计——梳理业务背景、订单流程规则、评价评分体系（审核评分 / 物流评分）、配送方式选择逻辑、订单列表字段扩展与附件预览功能，输出可直接进入评审的完整 PRD。",
+        "产出：一份覆盖「背景—流程—场景—字段」的完整 PRD，体现从业务分析到交互细节定义的 B 端产品能力，可在面试中现场展示与讲解。"
       ],
       "links": {
         "prototype": ""
