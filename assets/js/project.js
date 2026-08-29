@@ -79,6 +79,19 @@
     } else if (note) {
       note.style.display = 'none';
     }
+
+    // 额外文档（如验收流程、翻译表等补充材料）
+    var extra = project.extraDocs || [];
+    if (extra.length) {
+      html += '<div class="extra-docs" style="margin-top:14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">';
+      html += '<span style="color:#6b7280;font-size:13px;margin-right:4px">补充材料：</span>';
+      extra.forEach(function (doc) {
+        var fileName = (doc.path || '').split('/').pop() || 'document.pdf';
+        html += '<a class="btn btn-secondary" href="' + escapeHtml(doc.path) + '" target="_blank" rel="noopener">' + escapeHtml(doc.label || fileName) + '</a>';
+      });
+      html += '</div>';
+    }
+
     var proto = project.links && project.links.prototype;
     if (proto) {
       html += '<a class="btn btn-secondary" href="' + escapeHtml(proto) + '" target="_blank" rel="noopener">在线原型</a>';
