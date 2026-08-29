@@ -129,48 +129,154 @@
       }
     },
     {
-      "id": "order-verification",
-      "title": "订单需求设计",
-      "tagline": "从 0 到 1 独立完成订单模块的完整需求设计：业务背景、流程梳理、多场景交互规则与字段定义。",
+      "id": "scanner-login",
+      "title": "收银台扫码登录方案",
+      "tagline": "解决加盟商 App 覆盖率低与门店出餐效率差两个痛点，通过收银台+App 双端扫码改造账号体系与登录流程。",
+      "role": "产品方案独立设计",
+      "period": "2026.05",
+      "tags": [
+        "B 端",
+        "扫码登录",
+        "账号体系迁移",
+        "完整方案"
+      ],
+      "cover": "projects/scanner-login/01-page1.png",
+      "images": [
+        {
+          "src": "projects/scanner-login/01-page1.png",
+          "caption": "需求背景 · 提升 App 覆盖率与门店出餐效率"
+        },
+        {
+          "src": "projects/scanner-login/02-page2.png",
+          "caption": "扫码登录主流程 · App 端扫码确认 + 收银台端二维码"
+        },
+        {
+          "src": "projects/scanner-login/03-page3.png",
+          "caption": "异常处理 · 二维码过期遮罩、影响范围分析"
+        },
+        {
+          "src": "projects/scanner-login/04-page4.png",
+          "caption": "登录确认页 · 状态机设计"
+        }
+      ],
+      "prdPdf": "projects/scanner-login/PRD.pdf",
+      "summary": [
+        "背景：当前加盟商工作流程线上化程度低，加盟商在店长店员的覆盖率低，门店出餐效率差。需要在收银台增加扫码登录与扫码出餐两项功能改善这两类情况。",
+        "方案：核心是「无感迁移」——收银台账号体系迁移到加盟商账号体系，原收银员角色账号按门店关系复制进入加盟商账号体系成为门店员工。收银台默认扫码登录，底部保留账号密码登录入口作为兜底。",
+        "关键设计：120 秒二维码有效期，超时手动刷新；二维码过期增加遮罩无法识别 + 重新生成按钮；加盟商 App 金刚区增加扫一扫入口，仅对加盟商、店长、店员可见。",
+        "异常处理：未扫码 / 已扫码 / 已过期 / 失败 4 类异常场景全覆盖；账号未升级 / 已升级新版本两套兼容方案，新老账号并行过渡。",
+        "我的工作：独立设计完整产品方案——7 状态流转、6 类异常处理、5 项安全要求（一次性 Token / 2 分钟过期 / 防暴力破解 / 敏感信息隔离 / 权限校验）、8 项埋点指标、11 条验收标准，可直接进入评审与开发。"
+      ],
+      "links": {
+        "prototype": "https://mastergo.com/goto/TrX1zdCR?page_id=M&file=191363732382402"
+      }
+    },
+    {
+      "id": "learning-exam",
+      "title": "员工学习考试体系",
+      "tagline": "解决泰国籍员工招聘培养难、离职率高问题，通过在线学习-阶段考试-综合考试-证书发放全链路，覆盖 60+ 门店人员培训。",
+      "role": "产品经理 + 验收负责人",
+      "period": "2026.06",
+      "tags": [
+        "B 端",
+        "学习地图",
+        "考试认证",
+        "多语言",
+        "海外团队"
+      ],
+      "cover": "projects/learning-exam/01-page1.png",
+      "images": [
+        {
+          "src": "projects/learning-exam/01-page1.png",
+          "caption": "学习地图 · 岗位逐级解锁机制"
+        },
+        {
+          "src": "projects/learning-exam/02-page3.png",
+          "caption": "阶段学习 · 视频课程 + 互动"
+        },
+        {
+          "src": "projects/learning-exam/03-page5.png",
+          "caption": "阶段考试 · 答题 + 进度追踪"
+        },
+        {
+          "src": "projects/learning-exam/04-page7.png",
+          "caption": "综合考试 · 整体评估"
+        },
+        {
+          "src": "projects/learning-exam/05-page9.png",
+          "caption": "证书奖励 · 完成解锁证书"
+        },
+        {
+          "src": "projects/learning-exam/06-page11.png",
+          "caption": "学习任务 · 待办与推送"
+        }
+      ],
+      "prdPdf": "projects/learning-exam/PRD.pdf",
+      "extraDocs": [
+        {
+          "label": "验收流程文档（学习地图验收5层结构）",
+          "path": "projects/learning-exam/acceptance-process.pdf"
+        },
+        {
+          "label": "三语翻译表（中/英/泰 共145条）",
+          "path": "projects/learning-exam/i18n-translation.pdf"
+        }
+      ],
+      "summary": [
+        "背景：泰国区域 60+ 连锁门店，泰国籍员工招聘难、培养难、离职率高，需要通过在线学习、考试、发证书的方式加强员工培训与人才建设。",
+        "方案：从 0 设计完整学习路径——课程分类→课程资源→学习地图（岗位+阶段+课程）→阶段考试→综合考试→证书奖励→学习任务推送。岗位按顺序逐级解锁，完成前一岗位全部阶段后自动解锁下一岗位。",
+        "我的工作：①独立设计完整产品方案，输出 15 页 PRD 覆盖 5 大模块；②负责该模块上线验收——这是我的第一个验收需求，独立编写验收流程文档（5 层验收：后台配置→主流程→副流程→多语言→线上环境）；③管理 145 条中英泰三语文案翻译。",
+        "踩坑与改进：评审时很多提示信息（输入校验提示、空状态文案）根本看不到，只有测试时才能发现，导致翻译漏翻、来来回回改了好几轮。后来我改进：PRD 里加一个「文案清单」模块，把所有用户可见的提示文案逐条列出，评审时就和翻译团队逐条过一遍——后续模块翻译遗漏问题基本消除。",
+        "沉淀方法论：验收分层法——后台配置先跑通→主流程闭环→副流程→多语言遍历→显示细节→线上环境。这套方法后来在我做的所有功能验收中复用。"
+      ],
+      "links": {
+        "prototype": "https://mastergo.com/goto/Q1wswHlJ?page_id=1:3831&file=181954078828150"
+      }
+    },
+    {
+      "id": "order-evaluation",
+      "title": "订单评价模块需求设计",
+      "tagline": "从 0 到 1 独立完成订单评价模块的完整需求设计：业务背景、流程梳理、评分体系、交互细节与字段定义。",
       "role": "产品需求设计（独立输出）",
       "period": "2026.02 - 2026.03",
       "tags": [
         "B 端",
         "从0到1",
-        "订单流转",
+        "订单评价",
         "完整PRD"
       ],
-      "cover": "projects/order-verification/cover.png",
+      "cover": "projects/order-evaluation/cover.png",
       "images": [
         {
-          "src": "projects/order-verification/cover.png",
+          "src": "projects/order-evaluation/cover.png",
           "caption": "需求背景 · 订单流转与评价体系"
         },
         {
-          "src": "projects/order-verification/01-flow.png",
+          "src": "projects/order-evaluation/01-flow.png",
           "caption": "发布评价 · 评分规则与填写项"
         },
         {
-          "src": "projects/order-verification/02-order-submit.png",
+          "src": "projects/order-evaluation/02-order-submit.png",
           "caption": "订单详情 · 我的评价展示"
         },
         {
-          "src": "projects/order-verification/03-order-detail.png",
+          "src": "projects/order-evaluation/03-order-detail.png",
           "caption": "配送方式 · 选择与订单备注"
         },
         {
-          "src": "projects/order-verification/04-verify.png",
+          "src": "projects/order-evaluation/04-verify.png",
           "caption": "订单列表 · 新增字段与附件预览"
         }
       ],
-      "prdPdf": "projects/order-verification/PRD.pdf",
+      "prdPdf": "projects/order-evaluation/PRD.pdf",
       "summary": [
-        "背景：加盟商与门店之间的订单流转流程需要规范化，包括下单、配送选择、评价反馈等环节，旧系统无法满足业务精细化运营需要。",
-        "我的工作：独立完成该模块的完整需求设计——梳理业务背景、订单流程规则、评价评分体系（审核评分 / 物流评分）、配送方式选择逻辑、订单列表字段扩展与附件预览功能，输出可直接进入评审的完整 PRD。",
+        "背景：加盟商与门店之间的订单流转流程需要规范化，包括下单、配送选择、评价反馈等环节。旧系统没有评价机制，加盟商无法反馈审核 / 配送质量，总部也无法量化评估配送人员 KPI。",
+        "我的工作：独立完成该模块的完整需求设计——梳理业务背景、订单流程规则、评价评分体系（审核评分 / 物流评分双维度）、配送方式选择逻辑、订单列表字段扩展与附件预览功能，输出可直接进入评审的完整 PRD。",
+        "关键设计：① 评价入口放在「已签收」订单上，避免用户乱评；② 文字评价 100 字必填 + 图文评价非必填（4 图 1 视频）；③ 配送方式选择 + 订单备注一次下单收全信息；④ 评价数据同步到订单详情页只读展示。",
         "产出：一份覆盖「背景—流程—场景—字段」的完整 PRD，体现从业务分析到交互细节定义的 B 端产品能力，可在面试中现场展示与讲解。"
       ],
       "links": {
-        "prototype": ""
+        "prototype": "https://mastergo.com/goto/R3qpMBuQ?page_id=M&file=186459068222520"
       }
     }
   ]
